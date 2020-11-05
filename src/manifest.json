@@ -1,0 +1,33 @@
+{
+	"name": "Office 365 ATP Safe Links Decoder",
+	"description": "Improves readability of the safe links by replacing their content with the actual URL",
+	"version": "1.0",
+	"background": {
+		"scripts": [
+			"js/chrome/background.js"
+		],
+		"persistent": false
+	},
+	"manifest_version": 2,
+	"icons": {
+		"16": "images/icon-16.png",
+		"48": "images/icon-48.png",
+		"64": "images/icon-64.png",
+		"128": "images/icon.png"
+	},
+	"content_scripts":[
+		{
+			"matches":[ "https://*.office.com/*" ],
+			"js": [
+				"js/content.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"*://*.office.com/*",
+		"activeTab",
+		"webNavigation"
+	],
+	"web_accessible_resources": [ "images/*" ]
+}
