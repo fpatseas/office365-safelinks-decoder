@@ -32,7 +32,7 @@ const SafelinksDecoder = {
 		let safeLinks = document.querySelectorAll('a[href*="safelinks.protection.outlook.com"]:not([safelink-decoded])');
 	
 		safeLinks.forEach((link, index) => {
-			var url = link.getAttribute("href"),
+			let url = link.getAttribute("href"),
 				matches = url.match(/(?<=\?url\=).*(?=\&amp\;data\=)/);
 				
 			if( matches ) {
