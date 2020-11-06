@@ -22,4 +22,4 @@ A Chrome and Firefox extension that improves the readability of safe links by re
 **note**: The extension will remain installed until you restart Firefox.
 
 ## Disclaimer
-This browser extension neither enhances nor diminishes online security. It only affects the link text of Safe Links, so as to become easier to read and copy, living the URL intact. Therefore, protection against malicious links is not bypassed.
+This browser extension neither enhances nor diminishes online security. It only affects the link text of Safe Links, so as to become easier to read and copy, leaving the URL intact. Therefore, protection against malicious links is not bypassed.
